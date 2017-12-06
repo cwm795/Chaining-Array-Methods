@@ -1,1 +1,11 @@
-console.log("It works!!");
+var integers = [13, 25, 6, 3, 11, 2, 18, 7, 21, 1, 29, 20, 12, 8];
+
+
+function decending() {
+    integers.sort((start, end) => {
+      return end - start;
+    });
+    document.getElementById("div").innerHTML = integers;
+    console.log(" numbers in decending order ")
+}
+decending();
